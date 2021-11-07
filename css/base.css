@@ -31,7 +31,11 @@ html {
 #navlogo span {
   font-family: "Pacifico", cursive;
 }
-
+#navlogo span a{
+  text-decoration: none;
+  color: black;
+  font-family: "Pacifico", cursive;
+}
 #navbar-link {
   width: 100%;
   display: flex;
