@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecarte | product</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+
+<body>
+    <header id="page-header">
+        <nav id="block-navigation" class="navbar">
+            <div id="navlogo" class="nav-section">
+                <img src="/images/icons/logo.svg" alt="">
+                <span id="logoname">Ecarte</span>
+            </div>
+            <div id="navbar-link" class="nav-section">
+                <ul id="nav-link-list">
+                    <li class="navlinks"><span href="" class="nav-hover-links"><i class="fas fa-tshirt"></i> Clothing
+                            <div class="main-largedrpdown" id="clothing-drp-down">
+                                <div class="sub-categories">
+                                    <h3 class="sub-categories-heading">
+                                        Men's
+                                    </h3>
+                                    <ul class="categories-list">
+                                        <li><a href="">Shirts</a></li>
+                                        <li><a href="">Jeans</a></li>
+                                        <li><a href="">Shoes</a></li>
+                                        <li><a href="">T-shirts</a></li>
+                                        <li><a href="">Trousers</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sub-categories">
+                                    <h3 class="sub-categories-heading">
+                                        Ladies
+                                    </h3>
+                                    <ul class="categories-list">
+                                        <li><a href="">Tops</a></li>
+                                        <li><a href="">Jeans</a></li>
+                                        <li><a href="">Footwear</a></li>
+                                        <li><a href="">Skirts</a></li>
+                                        <li><a href="">Something</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sub-categories">
+                                    <h3 class="sub-categories-heading">
+                                        Kids
+                                    </h3>
+                                    <ul class="categories-list">
+                                        <li><a href="">Dresses</a></li>
+                                        <li><a href="">T-shirts</a></li>
+                                        <li><a href="">Footwear</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </span></li>
+                    <li class="navlinks"><span class="nav-hover-links"><i class="fas fa-laptop"></i> Electronics
+                            <div class="main-largedrpdown" id="clothing-drp-down">
+                                <div class="sub-categories">
+                                    <h3 class="sub-categories-heading">
+                                        Smartphones
+                                    </h3>
+                                    <ul class="categories-list">
+                                        <li><a href="">One Plus</a></li>
+                                        <li><a href="">Mi</a></li>
+                                        <li><a href="">Iphone</a></li>
+                                        <li><a href="">Realme</a></li>
+                                        <li><a href="">Samsung</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sub-categories">
+                                    <h3 class="sub-categories-heading">
+                                        Television
+                                    </h3>
+                                    <ul class="categories-list">
+                                        <li><a href="">Phillips Tv</a></li>
+                                        <li><a href="">Samsung Tv</a></li>
+                                        <li><a href="">Sony Tv</a></li>
+                                        <li><a href="">Mi Tv</a></li>
+                                        <li><a href="">OnePlus Tv</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="sub-categories">
+                                    <h3 class="sub-categories-heading">
+                                        Headphones and speakers
+                                    </h3>
+                                    <ul class="categories-list">
+                                        <li><a href="">Headphones</a></li>
+                                        <li><a href="">Earphones</a></li>
+                                        <li><a href="">Soundbars</a></li>
+                                        <li><a href="">Speakers</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </span></li>
+                    <li class="navlinks"><a href="cart.html" class="nav-hover-links" id="cart-link"><i
+                                class="fas fa-shopping-cart"></i> Cart</a></li>
+                    <li class="navlinks">
+                        <form action="" id="searchform"><input type="text" name="" id="searchbar"
+                                placeholder="Search"><button type="submit" id="search-btn"><i
+                                    class="fas fa-search w-low"></i></button></form>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <div id="media-division"></div>
+    </header>
+    <div class="js-el">
+        <h3 class="header-l prc-bighead" >
+            PRODUCTS / SHIRTS
+        </h3>
+    </div>
+    <div class="filtercontainer" id="filtersection">
+        <div class="filterForm">
+            <ul class="filter-options">
+                <li>
+                    <label for="sortfilter">Sort by :</label>
+                    <select name="sort" id="sortfilter">
+                        <option value="lth"><a href="">price low to high</a> </option>
+                        <option value="htl"><a href="">price high to low</a> </option>
+                        <option value="nf"><a href="">newest first</a> </option>
+                        <option value="pop"><a href="">popularity</a> </option>
+                    </select>
+                </li>
+                <li>
+                    <span class="as-filter-btn" id = "btn-flt" onclick="togglefilterbar()">
+                        <i class="fas fa-sliders-h"></i> Filter 
+                        <div id= "filterbar" style="display: none;">
+                            <form action="">
+                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero natus dolor, adipisci perspiciatis labore delectus. </div>
+                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur facilis quod omnis tempora, esse quaerat. </div>
+                            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et distinctio perferendis alias consectetur debitis inventore!</div>
+                            <button>Filter</button>
+                            </form>
+                        </div>
+                    </span>
+                    
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="collection-wrapper">
+
+        <div class="collection-card fadeInUp">
+            <div class="pr-img-wrapper">
+                <a href="">
+                    <img src="https://m.media-amazon.com/images/I/81JbgeGHyqL._UL1500_.jpg" alt="">
+                </a>
+            </div>
+            <div class="pr-desc-wrapper">
+                <span class="card-desc center-text"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing.</a></span>
+                <span class="card-price center-text">$565</span>
+            </div>
+        </div>
+        
+        <div class="collection-card fadeInUp">
+            <div class="pr-img-wrapper">
+                <a href="">
+                    <img src="https://m.media-amazon.com/images/I/61AXquuto3L._UL1500_.jpg" alt="">
+                </a>
+            </div>
+            <div class="pr-desc-wrapper">
+                <span class="card-desc center-text"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing.</a></span>
+                <span class="card-price center-text">$354</span>
+            </div>
+        </div>
+        
+        <div class="collection-card fadeInUp">
+            <div class="pr-img-wrapper">
+                <a href="">
+                    <img src="https://m.media-amazon.com/images/I/81JbgeGHyqL._UL1500_.jpg" alt="">
+                </a>
+            </div>
+            <div class="pr-desc-wrapper">
+                <span class="card-desc center-text"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing.</a></span>
+                <span class="card-price center-text">$456</span>
+            </div>
+        </div>
+        
+        <div class="collection-card fadeInUp">
+            <div class="pr-img-wrapper">
+                <a href="">
+                    <img src="https://m.media-amazon.com/images/I/619S4fgKTpL._UL1440_.jpg" alt="">
+                </a>
+            </div>
+            <div class="pr-desc-wrapper">
+                <span class="card-desc center-text"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing.</a></span>
+                <span class="card-price center-text">$555</span>
+            </div>
+        </div>
+        
+        <div class="collection-card fadeInUp">
+            <div class="pr-img-wrapper">
+                <a href="">
+                    <img src="https://m.media-amazon.com/images/I/61WrmjKbNzS._UL1440_.jpg" alt="">
+                </a>
+            </div>
+            <div class="pr-desc-wrapper">
+                <span class="card-desc center-text">
+                    <a href="">Lorem ipsum dolor, sit amet consectetur adipisicing.</a>
+                </span>
+                <span class="card-price center-text">$349</span>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <footer>
+        <h4>Developer : <i>Shrijan Shrivatava</i></h4>
+    </footer>
+
+</body>
+<script src="/script/app.js"></script>
+
+</html>
