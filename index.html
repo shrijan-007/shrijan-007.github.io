@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/a7d7fafbea.js" crossorigin="anonymous"></script>
+  <title>ToDos</title>
+  <link rel="stylesheet" href="/index.css" />
+</head>
+
+<body>
+  <header class="pageheader">
+    <div class="logo-wrapper">
+      <img src="/icons/todoLogo.svg" alt="logo" class="logoImage" />
+      <span class="logoName"> ToDos </span>
+    </div>
+    <div class="link-wrapper closed">
+      <ul>
+        <li>
+          <a href="">Add Tasks</a>
+        </li>
+        <li>
+          <a href="">Tasks</a>
+        </li>
+        <li>
+          <a href="">Completed Tasks</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div id="add-todo-wrapper">
+    <img src="media/task-manage.svg" alt="" />
+    <div class="supporter-el"></div>
+    <p class="sub-text">
+      Organize your work like never before. <br />
+      Start from Adding a task .<a href=""> Add a task</a>
+    </p>
+  </div>
+  <div class="add-task">
+    <form action="" class="add-task-form">
+      <p class="task-field-container">
+        <input type="text" id="title-input" />
+        <label for="title-input">Add Title:</label>
+      </p>
+      <p class="task-field-container">
+        <input type="text" id="description-input" />
+        <label for="description-input">Add Description:</label>
+      </p>
+      <p class="add-btn-wrapper"><button class="add-task-btn">Add</button></p>
+    </form>
+  </div>
+</body>
+<script src="app.js"></script>
+
+</html>
