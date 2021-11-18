@@ -36,6 +36,29 @@ function myFunction(x) {
       menuButton.style.transform = "none";
   }
 })
+
+var taskDesc= document.querySelectorAll('.task-desc');
+var revealBtn = document.querySelectorAll('.reveal-task');
+// revealBtn.style.trasition = "0.4s linear";
+
+if (revealBtn.length != 0) {
+  Array.from(revealBtn).forEach((btn)=>{
+    btn.addEventListener('click',()=>{
+      if (btn.parentElement.parentElement.children[1].classList.contains('showDesc')){
+        btn.style.transform = 'rotate(0deg)';
+        btn.parentElement.parentElement.children[1].classList.remove('showDesc');
+        console.log('done');
+      }
+      else{
+      btn.style.transform = 'rotate(-180deg)';
+      btn.parentElement.parentElement.children[1].classList.add('showDesc');
+      }
+    })
+  })
+  
+}
+
+
   var x = window.matchMedia("(max-width: 540px)");
   myFunction(x) // Call listener function at run time
   x.addEventListener('change',myFunction)
