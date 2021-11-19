@@ -167,6 +167,7 @@ div.add-task {
   border: none;
   border-radius: 6px;
   padding: var(--padding-small);
+  cursor: pointer;
 }
 .taskview-header {
   font-size: 30px;
