@@ -4,7 +4,8 @@ var toadd_desc = document.querySelector("#description-input");
 var tasks_frame = document.querySelector(".tasks-list");
 
 if (add_btn) {
-  add_btn.addEventListener("click", () => {
+  add_btn.addEventListener("click", (e) => {
+    e.preventdefault();
     if (toadd_title.value) {
       var list_el;
       list_el = setTask(toadd_title.value, toadd_desc.value,document.getElementsByClassName('task').length);
