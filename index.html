@@ -26,7 +26,7 @@
           <a href="#already-added">Tasks</a>
         </li>
         <li>
-          <a href="#tasks-here">Completed Tasks</a>
+          <a href="#tasks-done">Completed Tasks</a>
         </li>
       </ul>
     </div>
@@ -49,7 +49,7 @@
         <input type="text" id="description-input" autocomplete="off" />
         <label for="description-input" >Add Description:</label>
       </p>
-      <p class="add-btn-wrapper"><span class="add-task-btn" id="addTask-btn">Add Task</span></p>
+      <p class="add-btn-wrapper"><button class="add-task-btn" id="addTask-btn">Add Task</button></p>
     </form>
   </div>
   <div>
@@ -62,7 +62,12 @@
       </ul>
     </div>
   </div>
+  <h3 class="taskview-header" id = "already-done">
+    <img src="icons/taskdone.svg" alt="" height="36px" width="36px">&nbsp;Completed tasks
+  </h3>
+  <div class="completedtask" id="tasks-done">
 
+  </div>
 
 </body>
 <script src="app.js"></script>
